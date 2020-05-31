@@ -53,8 +53,7 @@ export default {
       document.addEventListener("mouseup", this.handleMouseUp);
       this.mouseDown = true;
       // 获取鼠标距离滑块最左侧距离
-      this.initOffest =
-        event.pageX - event.srcElement.getBoundingClientRect().left;
+      this.initOffest = event.pageX - event.srcElement.getBoundingClientRect().left;
     },
     handleMouseMove(event) {
       if (!this.mouseDown) return;
@@ -64,7 +63,7 @@ export default {
         outer.width;
       if (offsetPercent > this.maxLength) offsetPercent = this.maxLength;
       if (offsetPercent < this.minLength) offsetPercent = this.minLength;
-      // this.$emit('update:value',offsetPercent)
+      this.$emit('update:value',offsetPercent)
     },
     handleMouseUp() {
       this.mouseDown = false;
