@@ -1,11 +1,6 @@
 # 快速上手
-  ## clone the project
   git clone https://github.com/DB-K/commom-component.git
-
-  ## install dependency
   npm i
-  
-  ## develop
   npm start
   
 # 具体详情
