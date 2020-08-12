@@ -1,6 +1,4 @@
 # 面板分割组件
-
-# 快速上手
   git clone https://github.com/DB-K/commom-component.git
   
   npm i
