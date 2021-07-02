@@ -1,23 +1,10 @@
 <template>
-  <div id="app">
-    <!-- <router-view/> -->
-    <split-pane :value.sync="offset"></split-pane>
-  </div>
+  <router-view/>
 </template>
 
 <script>
-import SplitPane from "@/components/Splitpane";
 export default {
   name: "App",
-  components: {
-    SplitPane
-  },
-  data() {
-    return {
-      // 初始大小
-      offset: 0.5
-    };
-  },
 };
 </script>
 
@@ -29,5 +16,14 @@ export default {
   text-align: center;
   color: #2c3e50;
   margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+.btn-back {
+  width: 80px;
+  height: 40px;
+  color:#409EFF;
+  cursor:pointer;
+  margin-bottom: 20px;
 }
 </style>
