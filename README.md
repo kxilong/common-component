@@ -2,7 +2,6 @@
 
 ## Project Startup
 
-yarn
 yarn dev
 
 ## Cover components
